@@ -14,13 +14,58 @@
     <!-- build:css(.tmp) styles/main.css -->
     <link rel="stylesheet" href="styles/main.css">
     <!-- endbuild -->
+
+    <!-- fonts -->
+    <link href='http://fonts.googleapis.com/css?family=Cardo' rel='stylesheet' type='text/css'>
   </head>
   <body ng-app="mattfrizApp">
+    <!-- <canvas id="left-pcb" style="position: absolute" width="400px" height="100%"></canvas> -->
     <!--[if lt IE 7]>
       <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
     <![endif]-->
 
     <!-- Add your site or application content here -->
+    <div class="pic-background">
+      <div class="force-wide container">
+        <div class="nameplate">
+          <span>Matt Frisbie</span>
+        </div>
+        <div class="friz-navbar">
+          <a href="#/about">
+            About Me
+          </a>
+          <a href="#/publications">
+            Publications
+          </a>
+          <a href="#/expeditions">
+            Expeditions
+          </a>
+          <a href="#/running">
+            Running
+          </a>
+          <a href="/files/matt_frisbie_resume.pdf">
+            Résumé
+          </a>
+        </div>
+        <div class="friz-content" ng-view></div>
+
+        <!--
+        <ul class="nav nav-pills nav-stacked">
+          <li role="presentation" class="active"><a href="#">Home</a></li>
+          <li role="presentation"><a href="#">Profile</a></li>
+          <li role="presentation"><a href="#">Messages</a></li>
+        </ul>
+        -->
+
+        <!--
+        
+        -->
+      </div>
+    </div>
+
+    <!-- <canvas id="right-pcb" style="position: absolute" width="400px" height="100%"></canvas> -->
+
+    <!--
     <div class="container">
       <div class="header">
         <ul class="nav nav-pills pull-right">
@@ -37,6 +82,7 @@
         <p><span class="glyphicon glyphicon-heart"></span> from the Yeoman team</p>
       </div>
     </div>
+    -->
 
 
     <!-- Google Analytics: change UA-XXXXX-X to be your site's ID -->
@@ -75,7 +121,7 @@
         <!-- build:js({.tmp,app}) scripts/scripts.js -->
         <script src="scripts/app.js"></script>
         <script src="scripts/controllers/main.js"></script>
-        <script src="scripts/controllers/about.js"></script>
+        <script src="scripts/directives/content.js"></script>
         <!-- endbuild -->
 </body>
 </html>
