@@ -1,0 +1,128 @@
+html {
+  height: 100%;
+}
+
+body {
+  font-family: 'Cardo', serif;
+  /*color: #DCDCDC;*/
+  /*color: #FCFCFC;*/
+  /*background-color: #111111;*/
+  /*background-image: url("/images/grass_patch.jpg");*/
+  /*background-repeat: repeat;*/
+  height: 100%;
+}
+
+.pic-background {
+  background-image : url("/images/outfield_catch.jpg");
+  /*background-image : url("/images/20131013_180009.jpg");*/
+  /*background-image : url("/images/20140308_130549.jpg");*/
+
+  /*max-width:100%;*/
+  /*max-height:100%;*/
+  width: 100%;
+  height: 100%;
+  /*min-height: 100%;*/
+  /*height: 2341px;*/
+  background-size: cover;
+  /*background-size: width: 100%;*/
+  /*overflow: hidden;*/
+  background-position: right 0px;
+  background-repeat: no-repeat;
+  /*z-index: 2;*/
+  position: relative;
+}
+
+.friz-overlay {
+  /*z-index: 1;*/
+  position: absolute;
+  top: 0px;
+  width: 100%;
+  height: 100%;
+}
+
+.nameplate {
+  /*margin-top: 70px;*/
+  color: #FCFCFC;
+  text-shadow: -2px 0 #777777, 0 2px #777777, 2px 0 #777777, 0 -2px #777777;
+  font-size: 80px;
+  /*width: 500px;*/
+  width: 100%;
+  /*max-width: 420px;*/
+  text-align: center;
+  /*height: 70px;*/
+/*  display: table-cell;
+  vertical-align: middle;
+  margin: 0 auto;*/
+  /*
+  position: relative;*/
+  position: relative;
+  top: 35%;
+  transform: translateY(-35%);
+  /*line-height: 100%;*/
+  /*height: 100%;*/
+  /*margin: 70px auto 0px auto;*/
+  /*background-color: white;
+  /*text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;*/
+}
+
+div.friz-navbar {
+  position: fixed;
+  left: 0px;
+  width: 100%;
+  text-shadow: -1px 0 #777777, 0 1px #777777, 1px 0 #777777, 0 -1px #777777;
+}
+
+
+.nameplate-wrap {
+  position: absolute;
+  min-width: 420px;
+  width: 100%;
+  height: 100%;
+  top: 0px;
+  /*display: table;*/
+}
+
+.friz-content {
+  margin-top: 50px;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.5)
+  top: 0px;
+  bottom: 50px;
+  /*min-height: 500px;*/
+}
+
+.friz-navbar a {
+    display: block;
+    text-align: center;
+    font-size: 24px;
+    color: #FCFCFC;
+    border-radius: 24px;
+    border: 2px solid transparent;
+    cursor: pointer;
+    text-decoration: none;
+    background-color: transparent;
+    transition: background-color 0.2s linear, 
+                border 0.2s linear,
+                color 0.2s linear;
+}
+
+.friz-navbar a:hover {
+  border: 2px solid #F2552C;
+  background-color: black;
+  color: #F2552C;
+  text-shadow: none;
+}
+
+@media (min-width: 768px) {
+  .friz-navbar a {
+    float: left;
+    width: 20%;
+  }
+}
+
+@media (max-width: 768px) {
+  .friz-navbar a {
+    width: 90%;
+    margin: 0 auto;
+  }
+}

@@ -25,42 +25,33 @@
     <![endif]-->
 
     <!-- Add your site or application content here -->
-    <div class="pic-background">
-      <div class="force-wide container">
+    <div class="pic-background"></div>
+    <div class="nameplate-wrap">
+      <div class="friz-overlay">
         <div class="nameplate">
-          <span>Matt Frisbie</span>
+          Matt Frisbie
         </div>
-        <div class="friz-navbar">
-          <a href="#/about">
-            About Me
-          </a>
-          <a href="#/publications">
-            Publications
-          </a>
-          <a href="#/expeditions">
-            Expeditions
-          </a>
-          <a href="#/running">
-            Running
-          </a>
-          <a href="/files/matt_frisbie_resume.pdf">
-            Résumé
-          </a>
-        </div>
-        <div class="friz-content" ng-view></div>
-
-        <!--
-        <ul class="nav nav-pills nav-stacked">
-          <li role="presentation" class="active"><a href="#">Home</a></li>
-          <li role="presentation"><a href="#">Profile</a></li>
-          <li role="presentation"><a href="#">Messages</a></li>
-        </ul>
-        -->
-
-        <!--
-        
-        -->
       </div>
+    </div>
+    <div class="container">
+      <div class="friz-content" ng-view></div>
+    </div>
+    <div class="friz-navbar friz-overlay">
+      <a href="#/about">
+        About Me
+      </a>
+      <a href="#/publications">
+        Publications
+      </a>
+      <a href="#/expeditions">
+        Expeditions
+      </a>
+      <a href="#/running">
+        Running
+      </a>
+      <a href="/files/matt_frisbie_resume.pdf">
+        Résumé
+      </a>
     </div>
 
     <!-- <canvas id="right-pcb" style="position: absolute" width="400px" height="100%"></canvas> -->
