@@ -17,6 +17,7 @@
 
     <!-- fonts -->
     <link href='http://fonts.googleapis.com/css?family=Cardo' rel='stylesheet' type='text/css'>
+
   </head>
   <body ng-app="mattfrizApp">
     <!-- <canvas id="left-pcb" style="position: absolute" width="400px" height="100%"></canvas> -->
@@ -25,34 +26,14 @@
     <![endif]-->
 
     <!-- Add your site or application content here -->
-    <div class="pic-background"></div>
-    <div class="nameplate-wrap">
-      <div class="friz-overlay">
-        <div class="nameplate">
-          Matt Frisbie
-        </div>
-      </div>
+    <background></background>
+    <nameplate></nameplate>
+    <div id="content"
+         class="container friz-content" 
+         ng-show="viewState.contentVisible" 
+         ng-view>
     </div>
-    <div class="container">
-      <div class="friz-content" ng-view></div>
-    </div>
-    <div class="friz-navbar friz-overlay">
-      <a href="#/about">
-        About Me
-      </a>
-      <a href="#/publications">
-        Publications
-      </a>
-      <a href="#/expeditions">
-        Expeditions
-      </a>
-      <a href="#/running">
-        Running
-      </a>
-      <a href="/files/matt_frisbie_resume.pdf">
-        Résumé
-      </a>
-    </div>
+    <navbar></navbar>
 
     <!-- <canvas id="right-pcb" style="position: absolute" width="400px" height="100%"></canvas> -->
 
@@ -111,8 +92,13 @@
 
         <!-- build:js({.tmp,app}) scripts/scripts.js -->
         <script src="scripts/app.js"></script>
+        <script src="scripts/controllers/content.js"></script>
         <script src="scripts/controllers/main.js"></script>
         <script src="scripts/directives/content.js"></script>
+        <script src="scripts/directives/navbar.js"></script>
+        <script src="scripts/directives/nameplate.js"></script>
+        <script src="scripts/directives/background.js"></script>
+        <script src="scripts/directives/wordnoise.js"></script>
         <!-- endbuild -->
 </body>
 </html>

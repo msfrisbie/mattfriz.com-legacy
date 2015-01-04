@@ -1,13 +1,5 @@
 'use strict';
 
-/**
- * @ngdoc overview
- * @name mattfrizApp
- * @description
- * # mattfrizApp
- *
- * Main module of the application.
- */
 angular
   .module('mattfrizApp', [
     'ngAnimate',
@@ -17,27 +9,36 @@ angular
     'ngSanitize',
     'ngTouch',
     'mattfrizApp.controllers.main',
-    'mattfrizApp.directives.content'
+    'mattfrizApp.controllers.content',
+    'mattfrizApp.directives.content',
+    'mattfrizApp.directives.navbar',
+    'mattfrizApp.directives.nameplate',
+    'mattfrizApp.directives.background',
+    'mattfrizApp.directives.wordnoise'
   ])
   .config(function ($routeProvider) {
     $routeProvider
       .when('/', {
-        template: ''
+        template: '',
+        controller: 'MainCtrl'
       })
       .when('/about', {
-        templateUrl: 'views/about.html'
+        templateUrl: 'views/about.html',
+        controller: 'ContentCtrl'
       })
       .when('/publications', {
-        templateUrl: 'views/publications.html'
+        templateUrl: 'views/publications.html',
+        controller: 'ContentCtrl'
       })
       .when('/expeditions', {
-        templateUrl: 'views/expeditions.html'
+        templateUrl: 'views/expeditions.html',
+        controller: 'ContentCtrl'
       })
       .when('/running', {
-        templateUrl: 'views/running.html'
+        templateUrl: 'views/running.html',
+        controller: 'ContentCtrl'
       })
       .otherwise({
-        template: 'JAKESAUCE',
         redirectTo: '/'
       });
   });

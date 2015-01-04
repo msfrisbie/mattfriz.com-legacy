@@ -180,6 +180,21 @@ module.exports = function (grunt) {
       }
     },
 
+    // filerev_replace: {
+    //   // options: {
+    //   //   assets_root: '<%= yeoman.app %>/'
+    //   // },
+    //   compiled_assets: {
+    //     src: '<%= yeoman.dist %>/{,*/}*.{css,js}'
+    //   },
+    //   // views: {
+    //   //   options: {
+    //   //     views_root: 'tmp/views/'
+    //   //   },
+    //   //   src: 'tmp/views/**/*.html'
+    //   // }
+    // },
+
     // Reads HTML for usemin blocks to enable smart builds that automatically
     // concat, minify and revision files. Creates configurations in memory so
     // additional tasks can operate on them
@@ -416,6 +431,7 @@ module.exports = function (grunt) {
     'cssmin',
     'uglify',
     'filerev',
+    // 'filerev_replace',
     'usemin',
     'htmlmin'
   ]);

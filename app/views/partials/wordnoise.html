@@ -1,0 +1,8 @@
+<h2 class="darktext">
+  <span class="noselect"
+        ng-class="{fadeword: word.display}"
+        ng-click="forceFade($index)"
+        ng-repeat="word in viewData.sillyDescriptors track by $index">
+    {{ word.text }}
+  </span>
+</h2>
