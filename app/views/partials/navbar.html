@@ -1,7 +1,8 @@
-<div class="friz-navbar">
+<div ng-hide="hideNav" class="friz-navbar">
   <a class="animate-repeat"
      ng-repeat="el in navElements" 
      ng-bind="el.str" 
-     ng-href="{{el.link}}">
+     ng-click="scrollNav()"
+     ng-href="#{{el.link}}">
   </a>
 </div>

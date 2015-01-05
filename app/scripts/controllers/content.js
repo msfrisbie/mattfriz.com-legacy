@@ -2,13 +2,34 @@
 
 angular.module('mattfrizApp.controllers.content', [])
   .controller('ContentCtrl', 
-    function ($scope, $location, $anchorScroll) {
+    function ($scope, $location, $anchorScroll, $timeout) {
       $scope.viewState = {
         contentVisible: true
       };
 
-      $location.hash('content');
-      $anchorScroll();
+      // $location.hash('content');
+      // $anchorScroll();
+      var speed = 1000
+        , delay = 500;
+
+      $timeout(function() {
+        var targetOffset = $('#content').offset().top
+          , currOffset = $(document).scrollTop();
+
+        // if (currOffset > 50) {
+        //   speed = 200;
+        //   delay = 0;
+        // }
+
+        // if (currOffset > targetOffset) {
+        //   speed = 0;
+        //   delay = 0;
+        // }
+        if (currOffset < targetOffset) {
+          $("html, body").animate({ scrollTop: targetOffset }, speed);
+        }
+      }, delay);
+
 
       $scope.viewData = {
         sillyDescriptors: [

@@ -1,16 +1,22 @@
 'use strict';
 
 angular.module('mattfrizApp.directives.background', [])
-.directive('background', function($timeout) {
+.directive('background', function($timeout, $location) {
   return {
     restrict: 'E',
     template: '<div class="pic-background" ng-if="showbg"></div>',
     link: function(scope, el, attrs) {
-      scope.showbg = false;
-      $timeout(function() {
-        // console.log('jake')
+
+      var setData = function() {
         scope.showbg = true;
-      }, 1000);
+      }
+
+      if ($location.path() != '/' && $location.path() != '') {
+        setData();
+      } else {
+        scope.showbg = false;
+        $timeout(setData, 1000);
+      }
     }
   }
 })
