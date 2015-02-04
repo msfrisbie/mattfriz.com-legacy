@@ -3,6 +3,20 @@
 angular.module('mattfrizApp.controllers.content', [])
   .controller('ContentCtrl', 
     function ($scope, $location, $anchorScroll, $timeout) {
+
+      var garble = 'moc.liamg@eibsirfsm';
+
+      // $scope.showbox = false;
+      $scope.garbleStr = 'email';
+
+      $scope.showIt = function() {
+        // $scope.showbox = true;
+        $timeout(function() {
+          $scope.garbleStr = garble.split('').reverse().join('');
+          $scope.mailto = 'mailto:'+$scope.garbleStr;
+        }, 0)
+      }
+
       $scope.viewState = {
         contentVisible: true
       };
@@ -66,7 +80,7 @@ angular.module('mattfrizApp.controllers.content', [])
           {display: false, text: 'piker'}, 
           {display: false, text: 'striker'}, 
           {display: false, text: 'politician'}, 
-          {display: false, text: 'statictician'}, 
+          {display: false, text: 'statistician'}, 
           {display: false, text: 'rhetorician'}, 
           {display: false, text: 'dietician'}, 
           {display: false, text: 'visionary'}, 

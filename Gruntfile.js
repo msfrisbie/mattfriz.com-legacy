@@ -21,11 +21,15 @@ module.exports = function (grunt) {
     dist: 'dist'
   };
 
+  var projectConfig = require('./secret.json');
+
   // Define the configuration for all the tasks
   grunt.initConfig({
 
     // Project settings
     yeoman: appConfig,
+
+    project: projectConfig,
 
     // Watches files for changes and runs tasks based on the changed files
     watch: {
@@ -372,8 +376,8 @@ module.exports = function (grunt) {
     aws_s3: {
       options: {
         // mattfriz.com.s3-website-us-east-1.amazonaws.com
-        accessKeyId: 'AKIAJS6JUEVFNZA6M62Q',
-        secretAccessKey: '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',
+        accessKeyId: '<%= project.auth.aws.accessKeyId %>',
+        secretAccessKey: '<%= project.auth.aws.secretAccessKey %>',
         bucket: 'www.mattfriz.com'
       },
       clean_production: {

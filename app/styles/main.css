@@ -76,6 +76,75 @@ body {
   min-width: 300px;
 }
 
+.el-cap {
+  position: relative;
+  width: 100%;
+  min-height: 300px;
+  /*min-width: 500px;*/
+  background-size: cover;
+  background-position: center center;
+  background-image: url("/images/el-capitan.jpg");
+}
+
+.quote {
+  margin: 20px;
+  padding: 15px;
+  /*left: ;*/
+  font-size: 18px;
+  /*border-radius: 10px;*/
+  background-color: rgba(51, 51, 51, 0.4);
+}
+
+.quote p {
+  margin-bottom: 0;
+}
+
+.inset-quote {
+  position: absolute;
+  color: #EEEEEE;
+  text-shadow: -1px 0 #333333, 0 1px #333333, 1px 0 #333333, 0 -1px #333333;
+  /*top: 10%;*/
+  bottom: 0px;
+  /*overflow-y: scroll;*/
+  /*text-align: center;*/
+  /*font-size: 28px;*/
+  /*margin: 10px;*/
+}
+
+.inset-desc span{
+  position: absolute;
+  color: #333333;
+  /*text-shadow: -1px 0 #333333, 0 1px #333333, 1px 0 #333333, 0 -1px #333333;*/
+  top: 0px;
+  left: 0px;
+  font-size: 16px;
+  margin: 10px;
+}
+
+.gmap-iframe {
+  float: right;
+  width: 60%;
+  height: 500px;
+  border: 0;
+  margin: 0 0px 15px 15px;
+}
+
+.giants-strong strong {
+  color: #E88746;
+}
+
+.ul-strong strong {
+  text-decoration: underline;
+}
+
+.trip-link a {
+  color: #E88746;
+}
+
+.trip-link a:visited {
+  color: #E88746;;
+}
+
 /*.container.ng-enter {
   -webkit-transition:all linear 2s;
   transition:all linear 2s;
@@ -231,6 +300,23 @@ div.friz-navbar {
 .giants-orange {
   /*color: #F2552C;*/
   color: #E88746;
+}
+
+.contact {
+  text-align: center;
+}
+
+.contact a {
+  /*font-size: 32px;*/
+  color: #E88746;
+}
+
+.contact a:visited {
+  color: #E88746;
+}
+
+.contact h2 {
+  margin: 20px;
 }
 
 .darktext {

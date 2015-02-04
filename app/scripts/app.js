@@ -34,10 +34,13 @@ angular
         templateUrl: 'views/expeditions.html',
         controller: 'ContentCtrl'
       })
-      .when('/running', {
-        templateUrl: 'views/running.html',
-        controller: 'ContentCtrl'
-      })
+      // .when('/running', {
+      //   templateUrl: 'views/running.html',
+      //   controller: 'ContentCtrl'
+      // })
+      // .when('/resume', {
+      //   redirectTo: '/files/matt-frisbie-resume.pdf'
+      // })
       .otherwise({
         redirectTo: '/'
       });

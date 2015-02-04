@@ -7,7 +7,10 @@ angular.module('mattfrizApp.directives.navbar', [])
     templateUrl: '/views/partials/navbar.html',
     link: function(scope, el, attrs) {
 
-      scope.scrollNav = function(path) {
+      scope.scrollNav = function(remote) {
+        if (remote) {
+          return;
+        }
         if ($location.path() != '/' && $location.path() != '') {
           var targetOffset = $('#content').offset().top
             , currOffset = $(document).scrollTop();
@@ -27,15 +30,15 @@ angular.module('mattfrizApp.directives.navbar', [])
         scope.navElements = [
           {
             str: 'About Me',
-            link: '/about'
+            link: '#/about'
           },
           {
             str: 'Publications',
-            link: '/publications'
+            link: '#/publications'
           },
           {
             str: 'Expeditions',
-            link: '/expeditions'
+            link: '#/expeditions'
           },
           // {
           //   str: 'Running',
@@ -43,7 +46,8 @@ angular.module('mattfrizApp.directives.navbar', [])
           // },
           {
             str: 'Résumé',
-            link: '/files/matt_frisbie_resume.pdf'
+            link: '/files/matt-frisbie-resume.pdf',
+            remote: true
           }
         ];
       };

@@ -2,7 +2,7 @@
   <a class="animate-repeat"
      ng-repeat="el in navElements" 
      ng-bind="el.str" 
-     ng-click="scrollNav()"
-     ng-href="#{{el.link}}">
+     ng-click="scrollNav(el.remote)"
+     ng-href="{{el.link}}">
   </a>
 </div>
