@@ -433,6 +433,11 @@ div.friz-navbar {
   opacity:1;
 }*/
 
+h2 a,
+h2 a:hover {
+  color: #E88746
+}
+
 .friz-navbar a:hover {
   border: 2px solid #E88746;
   /*background-color: black;*/
