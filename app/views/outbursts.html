@@ -1,0 +1,10 @@
+<section style="min-height: 100%" ng-if="currentOutburst">
+	<hr />
+	<h3>{{currentOutburst.pubDate}}</h3>
+	<h2>{{currentOutburst.title}}</h2>
+	<hr />
+	<ng-include src="currentOutburst.url"></ng-include>
+	<hr />
+</section>
+<h3 ng-repeat="o in outbursts"><a href="#/outbursts/{{o.entry}}">{{o.title}}</a> - {{o.pubDate}}</h3>
+<hr />

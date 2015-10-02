@@ -43,7 +43,7 @@ body {
   margin: 20px;
 }
 
-.headshot {
+.headshot, .twitfeed {
   float: right;
   width: 40%;
   margin: 0 20px 20px 20px;
@@ -435,8 +435,16 @@ div.friz-navbar {
   opacity:1;
 }*/
 
+td {
+  padding: 12px;
+}
+
 h2 a,
-h2 a:hover {
+h2 a:hover,
+h2 a:active,
+h3 a,
+h3 a:hover,
+h3 a:active {
   color: #E88746
 }
 
@@ -451,17 +459,24 @@ h2 a:hover {
 @media (min-width: 600px) {
   .friz-navbar a {
     float: left;
-    width: 25%;
+    width: 20%;
   }
 }
 
 @media (max-width: 600px) {
   .friz-navbar a {
     float: left;
-    width: 50%;
+    width: 100%;
     /*margin: 0 auto;*/
   }
 }
+
+ @media screen and (orientation:portrait) {
+  .friz-navbar a {
+    float: left;
+    width: 100%;
+  }
+ }
 
 
 .copyright {

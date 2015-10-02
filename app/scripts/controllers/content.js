@@ -2,7 +2,21 @@
 
 angular.module('mattfrizApp.controllers.content', [])
   .controller('ContentCtrl', 
-    function ($scope, $location, $anchorScroll, $timeout) {
+    function ($rootScope, $scope, $location, $anchorScroll, $timeout) {
+
+      switch($location.path()) {
+        case '/about':
+          $rootScope.pageTitle = 'About Me | mattfriz.com';
+          break;
+        case '/publications':
+          $rootScope.pageTitle = 'Publications | mattfriz.com';
+          break;
+        case '/expeditions':
+          $rootScope.pageTitle = 'Expeditions | mattfriz.com';
+          break;
+        default:
+          $rootScope.pageTitle = 'mattfriz.com';
+      }
 
       var garble = 'moc.liamg@eibsirfsm';
 
@@ -43,7 +57,6 @@ angular.module('mattfrizApp.controllers.content', [])
           $("html, body").animate({ scrollTop: targetOffset }, speed);
         }
       }, delay);
-
 
       $scope.viewData = {
         sillyDescriptors: [

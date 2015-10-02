@@ -40,6 +40,10 @@ angular.module('mattfrizApp.directives.navbar', [])
             str: 'Expeditions',
             link: '#/expeditions'
           },
+          {
+            str: 'Outbursts',
+            link: '#/outbursts'
+          },
           // {
           //   str: 'Running',
           //   link: '/running'

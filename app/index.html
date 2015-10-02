@@ -1,8 +1,8 @@
 <!doctype html>
-<html class="no-js">
+<html class="no-js" ng-app="mattfrizApp">
   <head>
     <meta charset="utf-8">
-    <title>mattfriz.com</title>
+    <title ng-bind="pageTitle">mattfriz.com</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=800">
     <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
@@ -19,7 +19,7 @@
     <link href='http://fonts.googleapis.com/css?family=Cardo' rel='stylesheet' type='text/css'>
 
   </head>
-  <body ng-app="mattfrizApp">
+  <body>
     <!-- <canvas id="left-pcb" style="position: absolute" width="400px" height="100%"></canvas> -->
     <!--[if lt IE 7]>
       <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
@@ -30,6 +30,7 @@
     <nameplate></nameplate>
     <div id="content"
          class="container friz-content" 
+         style="min-height: 100%"
          ng-show="viewState.contentVisible" 
          ng-view>
     </div>
@@ -92,6 +93,7 @@
 
         <!-- build:js({.tmp,app}) scripts/scripts.js -->
         <script src="scripts/app.js"></script>
+        <script src="scripts/controllers/outburst.js"></script>
         <script src="scripts/controllers/content.js"></script>
         <script src="scripts/controllers/main.js"></script>
         <script src="scripts/directives/content.js"></script>

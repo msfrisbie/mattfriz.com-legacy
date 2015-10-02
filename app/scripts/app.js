@@ -10,6 +10,7 @@ angular
     'ngTouch',
     'mattfrizApp.controllers.main',
     'mattfrizApp.controllers.content',
+    'mattfrizApp.controllers.outburst',
     'mattfrizApp.directives.content',
     'mattfrizApp.directives.navbar',
     'mattfrizApp.directives.nameplate',
@@ -33,6 +34,10 @@ angular
       .when('/expeditions', {
         templateUrl: 'views/expeditions.html',
         controller: 'ContentCtrl'
+      })
+      .when('/outbursts/:entry?', {
+        templateUrl: 'views/outbursts.html',
+        controller: 'OutburstCtrl'
       })
       // .when('/running', {
       //   templateUrl: 'views/running.html',
