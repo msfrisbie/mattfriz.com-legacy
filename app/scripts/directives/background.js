@@ -15,7 +15,7 @@ angular.module('mattfrizApp.directives.background', [])
         setData();
       } else {
         scope.showbg = false;
-        $timeout(setData, 1000);
+        $timeout(setData, 600); // 1000
       }
     }
   }

@@ -38,7 +38,14 @@ angular.module('mattfrizApp.controllers.outburst', [])
       	  pubDate: 'October 2, 2015',
       	  title: 'The Tenacity of Tech Recruiters',
       	  url: 'views/outbursts/recruiter-email.html'
-      	}//,
+      	},
+        {
+          entry: 'Tech Interview Torture Chamber',
+          pubDate: 'February 22, 2016',
+          title: 'Tech Interview Torture Chamber',
+          url: 'views/outbursts/perfect-technical-hiring-process.html'
+        }
+        //,
        //  {
        // 	  entry: 'why-so-serious',
       	//   pubDate: 'September 27, 2015',

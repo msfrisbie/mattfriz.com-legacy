@@ -17,7 +17,7 @@ angular.module('mattfrizApp.directives.nameplate', [])
         setData();
       } else {
         scope.showname = false;
-        $timeout(setData, 500);
+        $timeout(setData, 300); // 500
       }
     }
   };

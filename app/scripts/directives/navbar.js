@@ -59,8 +59,8 @@ angular.module('mattfrizApp.directives.navbar', [])
       if ($location.path() != '/' && $location.path() != '') {
         setData();
       } else {
-        scope.hideNav = true;
-        $timeout(setData, 2500);
+       scope.hideNav = true;
+       $timeout(setData, 1400); // 2500
       }
     }
   };

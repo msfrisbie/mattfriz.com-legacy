@@ -6,7 +6,7 @@ html {
 body {
   padding: 0px;
   margin: 0px;
-  font-family: 'Cardo', serif;
+  font-family: 'Raleway', serif;
   /*color: #DCDCDC;*/
   /*color: #FCFCFC;*/
   background-color: #222222;
@@ -34,6 +34,7 @@ body {
   background-repeat: no-repeat;
   /*z-index: 2;*/
   position: relative;
+  margin-top: -20px;
 }
 
 .pub-cover {
@@ -448,6 +449,11 @@ h3 a:active {
   color: #E88746
 }
 
+h3 {
+  font-size: 2em;
+  font-weight: bold;
+}
+
 .friz-navbar a:hover {
   border: 2px solid #E88746;
   /*background-color: black;*/
@@ -456,18 +462,17 @@ h3 a:active {
   text-shadow: none;
 }
 
-@media (min-width: 600px) {
+/*/@media (min-width: 600px) {*/
   .friz-navbar a {
     float: left;
     width: 20%;
   }
-}
-
+/*}*/
+/*
 @media (max-width: 600px) {
   .friz-navbar a {
     float: left;
     width: 100%;
-    /*margin: 0 auto;*/
   }
 }
 
@@ -477,7 +482,7 @@ h3 a:active {
     width: 100%;
   }
  }
-
+*/
 
 .copyright {
   bottom:0; 
