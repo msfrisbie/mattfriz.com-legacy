@@ -40,10 +40,16 @@ angular.module('mattfrizApp.controllers.outburst', [])
       	  url: 'views/outbursts/recruiter-email.html'
       	},
         {
-          entry: 'Tech Interview Torture Chamber',
+          entry: 'tech-interview-torture-chamber',
           pubDate: 'February 22, 2016',
           title: 'Tech Interview Torture Chamber',
           url: 'views/outbursts/perfect-technical-hiring-process.html'
+        },
+        {
+          entry: 'startup-equity-handbook',
+          pubDate: 'September 12, 2016',
+          title: 'Startup Equity Handbook',
+          url: 'views/outbursts/startup-equity-handbook.html'
         }
         //,
        //  {
