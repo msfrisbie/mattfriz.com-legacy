@@ -50,7 +50,15 @@ angular.module('mattfrizApp.controllers.outburst', [])
           pubDate: 'September 12, 2016',
           title: 'Startup Equity Handbook',
           url: 'views/outbursts/startup-equity-handbook.html'
+        },
+        {
+          entry: 'open-source-rehash',
+          pubDate: 'September 13, 2016',
+          title: 'Startup Engineer Unwittingly Implements Crappier Version of Open Source Project',
+          url: 'views/outbursts/open-source-rehash.html'
         }
+
+
         //,
        //  {
        // 	  entry: 'why-so-serious',
