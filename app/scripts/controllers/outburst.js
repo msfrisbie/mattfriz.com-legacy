@@ -56,6 +56,12 @@ angular.module('mattfrizApp.controllers.outburst', [])
           pubDate: 'September 13, 2016',
           title: 'Startup Engineer Unwittingly Implements Crappier Version of Open Source Project',
           url: 'views/outbursts/open-source-rehash.html'
+        },
+        {
+          entry: 'trendy-framework',
+          pubDate: 'February 20, 2017',
+          title: 'Midsize Startup Impulsively Adopts Trendy JS Framework in Effort to Rectify Insurmountable Technical Debt',
+          url: 'views/outbursts/trendy-framework.html'
         }
 
 
