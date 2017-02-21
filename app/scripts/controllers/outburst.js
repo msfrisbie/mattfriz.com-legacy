@@ -10,6 +10,8 @@ angular.module('mattfrizApp.controllers.outburst', [])
       $scope.viewState = {
         contentVisible: true
       };
+      
+      $("html, body").animate({ scrollTop: 0 }, 0);
 
       /*
       // $location.hash('content');
