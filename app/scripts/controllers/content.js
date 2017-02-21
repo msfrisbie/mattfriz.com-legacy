@@ -4,6 +4,9 @@ angular.module('mattfrizApp.controllers.content', [])
   .controller('ContentCtrl', 
     function ($rootScope, $scope, $location, $anchorScroll, $timeout) {
 
+      document.getElementById('background').style.display = undefined;
+      document.getElementById('nameplate').style.display = undefined;
+
       switch($location.path()) {
         case '/about':
           $rootScope.pageTitle = 'About Me | mattfriz.com';
@@ -13,6 +16,9 @@ angular.module('mattfrizApp.controllers.content', [])
           break;
         case '/expeditions':
           $rootScope.pageTitle = 'Expeditions | mattfriz.com';
+          break;
+        case '/outbursts':
+          $rootScope.pageTitle = 'Outbursts | mattfriz.com';
           break;
         default:
           $rootScope.pageTitle = 'mattfriz.com';
@@ -53,7 +59,7 @@ angular.module('mattfrizApp.controllers.content', [])
         //   speed = 0;
         //   delay = 0;
         // }
-        if (currOffset < targetOffset) {
+        if (currOffset < (targetOffset - 50)) {
           $("html, body").animate({ scrollTop: targetOffset }, speed);
         }
       }, delay);

@@ -12,6 +12,7 @@ angular.module('mattfrizApp.directives.navbar', [])
           return;
         }
         if ($location.path() != '/' && $location.path() != '') {
+          return;
           var targetOffset = $('#content').offset().top
             , currOffset = $(document).scrollTop();
 

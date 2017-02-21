@@ -4,11 +4,14 @@ angular.module('mattfrizApp.controllers.outburst', [])
   .controller('OutburstCtrl', 
     function ($rootScope, $scope, $location, $anchorScroll, $timeout, $routeParams) {
 
+      document.getElementById('background').style.display = 'none';
+      document.getElementById('nameplate').style.display = 'none';
 
       $scope.viewState = {
         contentVisible: true
       };
 
+      /*
       // $location.hash('content');
       // $anchorScroll();
       var speed = 1000
@@ -30,7 +33,7 @@ angular.module('mattfrizApp.controllers.outburst', [])
         if (currOffset < targetOffset) {
           $("html, body").animate({ scrollTop: targetOffset }, speed);
         }
-      }, delay);
+      }, delay);*/
 
       $scope.outbursts = [
         {

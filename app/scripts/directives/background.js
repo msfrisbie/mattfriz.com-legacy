@@ -6,6 +6,9 @@ angular.module('mattfrizApp.directives.background', [])
     restrict: 'E',
     template: '<div class="pic-background" ng-if="showbg"></div>',
     link: function(scope, el, attrs) {
+      if ($location.path() !== '' && $location.path() !== '') {
+        el[0].style.display = 'none';
+      }
 
       var setData = function() {
         scope.showbg = true;
