@@ -42,31 +42,36 @@ angular.module('mattfrizApp.controllers.outburst', [])
        	  entry: 'recruiter-email',
       	  pubDate: 'October 2, 2015',
       	  title: 'The Tenacity of Tech Recruiters',
-      	  url: 'views/outbursts/recruiter-email.html'
+      	  url: 'views/outbursts/recruiter-email.html',
+          newUrl: 'https://alwaystrending.io/articles/tenacity-of-tech-recruiters?action=redirect'
       	},
         {
           entry: 'tech-interview-torture-chamber',
           pubDate: 'February 22, 2016',
           title: 'Tech Interview Torture Chamber',
-          url: 'views/outbursts/perfect-technical-hiring-process.html'
+          url: 'views/outbursts/perfect-technical-hiring-process.html',
+          newUrl: 'https://alwaystrending.io/articles/tech-interview-torture-chamber?action=redirect'
         },
         {
           entry: 'startup-equity-handbook',
           pubDate: 'September 12, 2016',
           title: 'Startup Equity Handbook',
-          url: 'views/outbursts/startup-equity-handbook.html'
+          url: 'views/outbursts/startup-equity-handbook.html',
+          newUrl: 'https://alwaystrending.io/articles/startup-equity-handbook?action=redirect'
         },
         {
           entry: 'open-source-rehash',
           pubDate: 'September 13, 2016',
           title: 'Startup Engineer Unwittingly Implements Crappier Version of Open Source Project',
-          url: 'views/outbursts/open-source-rehash.html'
+          url: 'views/outbursts/open-source-rehash.html',
+          newUrl: 'https://alwaystrending.io/articles/startup-engineer-unwittingly-implements-crappier-version-of-open-source-project?action=redirect'
         },
         {
           entry: 'trendy-framework',
           pubDate: 'February 20, 2017',
           title: 'Midsize Startup Impulsively Adopts Trendy JS Framework in Effort to Rectify Insurmountable Technical Debt',
-          url: 'views/outbursts/trendy-framework.html'
+          url: 'views/outbursts/trendy-framework.html',
+          newUrl: 'https://alwaystrending.io/articles/midsize-startup-impulsively-adopts-trendy-js-framework?action=redirect'
         }
 
 
@@ -82,7 +87,9 @@ angular.module('mattfrizApp.controllers.outburst', [])
       // initialization
       for(var i=0; i<$scope.outbursts.length; ++i) {
       	if($scope.outbursts[i].entry == $routeParams.entry) {
-      	  $scope.currentOutburst = $scope.outbursts[i];
+      	  // $scope.currentOutburst = $scope.outbursts[i];
+          // console.log($scope.outbursts[i].newUrl);
+          window.location.href = $scope.outbursts[i].newUrl;
       	}
       }
 
